@@ -7,26 +7,57 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+dist-ssr/
+build/
+.output/
+.vite/
+.nitro/
+
+# Environment variables
+.env
+.env.*
+!.env.example
 *.local
 
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
+# Coverage
+coverage/
+.nyc_output
 
-# Editor directories and files
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.pnpm-store/
+
+# IDE files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.vscode-test/
+.idea/
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Deployment
+.vercel/
+.netlify/
+
+# TypeScript
+*.tsbuildinfo
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
